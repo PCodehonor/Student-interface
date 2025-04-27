@@ -94,3 +94,10 @@ This project is a main page interface specifically designed for students. It off
 
 
 
+## 📂 Quick Start | 快速开始
+
+```bash
+# Clone this repository 克隆仓库
+git clone 
+
+# Open index.html with your browser 打开 index.html 文件
