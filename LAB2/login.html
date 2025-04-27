@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <title>学生登录</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded">
+
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+
+    <!-- 自定义样式：背景图 + 居中 + 模糊 -->
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url('bg.png'); /* 替换为你的背景图 */
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px);
+            z-index: -1;
+        }
+
+        .auth-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .auth-content {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4099ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #357ae8;
+        }
+
+        a {
+            color: #4099ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .text-muted {
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="auth-wrapper">
+        <div class="auth-content">
+
+            <img src="https://www.nuit.edu.cn/content/main/base/img/logo.png" alt="logo" style="width: 200px; margin-bottom: 40px;">
+
+            <h4 class="mb-3">登录</h4>
+            <input type="text" class="form-control" id="Email" placeholder="账号">
+            <input type="password" class="form-control" id="Password" placeholder="密码">
+            <div style="text-align: left; margin-bottom: 15px;">
+                <input type="checkbox" id="customCheck1">
+                <label for="customCheck1">保存凭据</label>
+            </div>
+            <button class="btn" onclick="checkLogin()">登录</button>
+            
+            <p class="text-muted">忘记密码？<a href="reset-password.html">重置</a></p>
+            <p class="text-muted">还没有账户？<a href="sign.html">注册</a></p>
+        </div>
+    </div>
+
+    <!-- 登录逻辑脚本 -->
+    <script>
+        function checkLogin() {
+            const user = document.getElementById("Email").value.trim();
+            const pass = document.getElementById("Password").value.trim();
+
+            if (user === "admin" && pass === "admin") {
+                window.location.href = "student.html";
+            } else {
+                alert("账号或密码错误，请重试！");
+            }
+        }
+    </script>
+</body>
+
+</html>
