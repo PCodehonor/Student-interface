@@ -3,13 +3,7 @@
 ## 简介
 本项目是一个专为学生设计的主页面界面，提供了用户信息展示、实验查看、成绩查询、作业提交等功能。界面清新简洁，采用现代卡片式布局与响应式设计，兼具美观与实用性。
 
-## 📂 Quick Start | 快速开始
 
-```bash
-# Clone this repository 克隆仓库
-git clone https://github.com/PCodehonor/Student-interface.git
-# Open index.html with your browser 打开 login.html 文件
----
 ---
 
 ## ✨ 功能亮点
@@ -100,6 +94,12 @@ This project is a main page interface specifically designed for students. It off
 - **Styling Framework (optional)**: Tailwind CSS / Bootstrap
 - **File Uploading**: Native JavaScript or lightweight libraries (e.g., Dropzone.js)
 
+## 📂 Quick Start | 快速开始
 
+```bash
+# Clone this repository 克隆仓库
+git clone https://github.com/PCodehonor/Student-interface.git
+# Open index.html with your browser 打开 login.html 文件
+---
 
 
