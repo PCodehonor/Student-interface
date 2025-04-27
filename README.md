@@ -51,7 +51,7 @@
 # Clone this repository 克隆仓库
 git clone https://github.com/PCodehonor/Student-interface.git
 # Open index.html with your browser 打开 login.html 文件
-
+---
 
 # 📚 Student Main Page Project
 
