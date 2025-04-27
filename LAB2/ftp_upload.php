@@ -1,7 +1,7 @@
 <?php
 // ftp_upload.php
-$ftp_server = "2409:8a62:aa01:814:39fb:9cb8:6cae:8d13";
-$ftp_username = "000000";
+$ftp_server = "your ip";
+$ftp_username = "111111";
 $ftp_password = "000000";
 
 // 获取上传的文件和文件夹信息
