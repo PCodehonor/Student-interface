@@ -44,6 +44,14 @@
 - **样式框架**：Tailwind CSS / Bootstrap 可选
 - **文件上传**：基于原生JS或轻量第三方库（如 Dropzone.js）
 
+---
+## 📂 Quick Start | 快速开始
+
+```bash
+# Clone this repository 克隆仓库
+git clone https://github.com/PCodehonor/Student-interface.git
+# Open index.html with your browser 打开 login.html 文件
+
 
 # 📚 Student Main Page Project
 
@@ -94,10 +102,3 @@ This project is a main page interface specifically designed for students. It off
 
 
 
-## 📂 Quick Start | 快速开始
-
-```bash
-# Clone this repository 克隆仓库
-git clone 
-
-# Open index.html with your browser 打开 index.html 文件
